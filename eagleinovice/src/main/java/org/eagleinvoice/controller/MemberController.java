@@ -42,7 +42,7 @@ public class MemberController {
         model.addAttribute("members", memberDao.findAllOrderedByName());
         return "index";
     }
-
+//test commit
     @RequestMapping(method = RequestMethod.POST)
     public String registerNewMember(@Valid @ModelAttribute("newMember") Member newMember, BindingResult result, Model model) {
         if (!result.hasErrors()) {
